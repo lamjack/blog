@@ -2,8 +2,8 @@
 title: Symfony2在Controller中实现登陆以及登出
 date: 2015-10-12 00:00:00
 tags:
-	- symfony2
-	- php
+  - symfony2
+  - php
 ---
 首先自己实现一个用户实体（实现 Symfony\Component\Security\Core\User\UserInterface 中的方法)，
 

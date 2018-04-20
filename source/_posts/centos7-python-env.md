@@ -1,9 +1,12 @@
 ---
 title: CentOS7 Python 开发环境搭建
 date: 2016-11-09 10:38:45
+categories:
+  - 编程语言
+  - Python
 tags:
-	- centos7
-	- python
+  - centos7
+  - python
 ---
 CentOS7系统默认使用的Python版本为2.7.5。
 

@@ -1,7 +1,9 @@
 ---
 title: CocoaPods的安装和使用
 date: 2016-11-10 14:35:58
-tags:
+categories:
+  - 编程语言
+  - Objective-C
 ---
 本文适用于Mac OS环境，并默认已经安装了[brew](http://brew.sh/index_zh-cn.html)作为系统组件的管理工具。
 

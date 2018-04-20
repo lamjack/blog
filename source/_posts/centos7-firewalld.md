@@ -1,9 +1,11 @@
 ---
 title: CentOS 7 firewalld 研习记录
 date: 2016-11-08 12:35:28
+categories:
+  - Linux
 tags: 
-	- centos7
-	- firewalld
+  - centos7
+  - firewalld
 ---
 <!--more-->
 

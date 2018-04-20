@@ -1,10 +1,13 @@
 ---
 title: Doctrine2使用utf8mb4
 date: 2014-12-31 00:00:00
+categories:
+  - 编程语言
+  - PHP
 tags:
-	- doctrine2
-	- php
-	- symfony2
+  - doctrine2
+  - php
+  - symfony2
 ---
 在Symfony2配置文件**app/config/config.yml**中找到doctrine配置的地方，
 

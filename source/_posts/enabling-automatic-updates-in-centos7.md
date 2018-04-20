@@ -1,6 +1,8 @@
 ---
 title: 让CentOS7自动升级YUM组件
 date: 2016-10-10 15:47:16
+categories:
+  - Linux
 tags:
   - centos
 ---

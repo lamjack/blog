@@ -1,9 +1,11 @@
 ---
 title: Linux ACL权限设置
 date: 2016-11-17 20:56:26
+categories:
+  - Linux
 tags:
-	- linux
-	- acl
+  - linux
+  - acl
 ---
 这篇文章是讨论关于setfacl和getfacl这个命令的。
 
