@@ -81,3 +81,7 @@ deploy:
   type: git
   repo: git@github.com:lamjack/lamjack.github.io.git
   branch: master
+
+mermaid:
+  enable: true  # default true
+  version: "7.1.2" # default v7.1.2
