@@ -19,7 +19,7 @@ tags:
 
 <!--more-->
 
-以下命令必须以```root```用户身份运行。
+以下命令必须以root用户身份运行。
 
 ## netstat
 
@@ -29,7 +29,7 @@ netstat -tulpn
 
 ![1](https://jack-images.wilead.net/blog/tcoja.png)
 
-可以看到```mysqld```进程```25485```正在监听```3306```端口，我们可以通过```/proc```文件系统验证下。
+可以看到mysqld进程25485正在监听3306端口，我们可以通过/proc文件系统验证下。
 
 ```bash
 ls -l /proc/25485/exe
@@ -37,7 +37,7 @@ ls -l /proc/25485/exe
 
 ![2](https://jack-images.wilead.net/blog/vrdht.png)
 
-还可以通过```grep```命令来过滤查询信息。
+还可以通过grep命令来过滤查询信息。
 
 ```bash
 netstat -tulpn | grep :80
@@ -47,7 +47,7 @@ netstat -tulpn | grep :80
 
 ## fuser
 
-我们通过```fuser```命令来查看当前本机的```6379```端口被哪个进程监听，
+我们通过fuser命令来查看当前本机的6379端口被哪个进程监听，
 
 ```bash
 fuser 6379/tcp
@@ -55,7 +55,7 @@ fuser 6379/tcp
 
 ![4](https://jack-images.wilead.net/blog/w49zo.png)
 
-通过```/proc```文件查询下```PID25382```对应的进程信息，
+通过/proc文件查询下PID25382对应的进程信息，
 
 ```bash
 ls -l /proc/25382/exe
@@ -71,7 +71,7 @@ ls -l /proc/25485/cwd
 
 ![1](https://jack-images.wilead.net/blog/4uyek.png)
 
-这跟```pwdx```命令的功能是相同的。
+这跟pwdx命令的功能是相同的。
 
 ## 实战2：找出进程的所有者（Owner）
 
@@ -81,7 +81,7 @@ ps aux | grep 25485
 
 ![屏幕快照 2018-06-07 下午2.45.07](https://jack-images.wilead.net/blog/rhc83.png)
 
-或者通过```/proc```查询，
+或者通过/proc查询，
 
 ```bash
 grep --color -w -a USER /proc/25485/environ
@@ -91,7 +91,7 @@ grep --color -w -a USER /proc/25485/environ
 
 ## lsof
 
-列举下```lsof```命令的几种常用的查询方式，
+列举下lsof命令的几种常用的查询方式，
 
 ```bash
 lsof -i :port
@@ -102,7 +102,7 @@ lsof -i :port | grep LISTEN
 
 ![3](https://jack-images.wilead.net/blog/ywgkg.png)
 
-查询更多关于nginx主进程```1837```的信息，
+查询更多关于nginx主进程1837的信息，
 
 ```bash
 ps aux | grep 1837
