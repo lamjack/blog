@@ -83,5 +83,5 @@ deploy:
   branch: master
 
 mermaid:
-  enable: true  # default true
-  version: "7.1.2" # default v7.1.2
+  enable: true
+  version: "7.1.2"
