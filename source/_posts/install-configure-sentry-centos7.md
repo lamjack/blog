@@ -121,16 +121,16 @@ pip install -U sentry
 
 ```python
 DATABASES = {
-	'default': {
-		'ENGINE': 'sentry.db.postgres',
-		'NAME': 'sentrydb',
-		'USER': 'sentry',
-		'PASSWORD': 'your_password',
-		'HOST': '127.0.0.1',
-		'PORT': '5432',
-		'AUTOCOMMIT': True,
-		'ATOMIC_REQUESTS': False,
-	}
+  'default': {
+    'ENGINE': 'sentry.db.postgres',
+    'NAME': 'sentrydb',
+    'USER': 'sentry',
+    'PASSWORD': 'your_password',
+    'HOST': '127.0.0.1',
+    'PORT': '5432',
+    'AUTOCOMMIT': True,
+    'ATOMIC_REQUESTS': False,
+  }
 }
 ```
 
@@ -138,11 +138,11 @@ DATABASES = {
 
 ```yaml
 redis.clusters:
-	default:
-		hosts:
-			0:
-				host: 127.0.0.1
-				port: 6379
+  default:
+    hosts:
+      0:
+        host: 127.0.0.1
+        port: 6379
 ```
 
 15. 更新 pg_hba.conf 文件，并重启Postgresql服务
@@ -275,7 +275,7 @@ server {
     ssl_session_timeout 10m;
 
     location / {
-		proxy_pass         http://sentry;
+        proxy_pass         http://sentry;
     	proxy_set_header   Host                 $http_host;
     	proxy_set_header   X-Forwarded-Proto    $scheme;
     	proxy_set_header   X-Forwarded-For      $remote_addr;
