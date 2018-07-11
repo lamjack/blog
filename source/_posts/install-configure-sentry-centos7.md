@@ -1,5 +1,5 @@
 ---
-title: CentOS7下安装、配置sentry（非Docket部署）
+title: CentOS7下部署Sentry(不使用Docker）
 date: 2018-07-11 18:18:10
 categories:
   - Linux
