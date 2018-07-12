@@ -241,7 +241,7 @@ firewall-cmd --zone="public" --add-forward-port=port=80:proto=tcp:toport=8080:to
 重载配置文件
 
 ```bash
-firewall-cmd reload
+firewall-cmd --reload
 ```
 
 ## 参考文章
