@@ -109,8 +109,8 @@ WantedBy=multi-user.target
 ```
 
 ```bash
-systemctl enable ss-local
-systemctl start ss-local
+systemctl enable ss-client.service
+systemctl start ss-client.service
 ```
 
 ## proxychains4
