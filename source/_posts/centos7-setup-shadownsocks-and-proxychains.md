@@ -86,7 +86,7 @@ vi /usr/local/etc/shadowsocks/client.json
     "server": "0.0.0.0",
     "server_port": 10000,
     "local_address": "127.0.0.1",
-    "local_port": 1080,
+    "local_port": 1086,
     "password": "yourpasswd",
     "timeout": 300,
     "method": "aes-192-cfb",
@@ -136,7 +136,7 @@ localnet 127.0.0.0/255.0.0.0
 localnet 192.168.0.0/255.255.0.0
 ...
 [ProxyList]
-socks5 127.0.0.1 1080
+socks5 127.0.0.1 1086
 ```
 
 完，之后使用composer等命令行工具的时候，使用下面命令即可。
