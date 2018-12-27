@@ -1,5 +1,5 @@
 ---
-wwtitle: 系统信号SIGINT和SIGTERM的区别以及GOLANG中信号处理
+title: 系统信号SIGINT和SIGTERM的区别以及GOLANG中信号处理
 categories:
   - 编程语言
   - Go
